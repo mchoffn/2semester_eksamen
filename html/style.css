@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	overflow-y: scroll; /*Makes all pages look the same despite the scroll bar.*/
+}
+body{
+	font-family: 'Roboto', 'verdana', 'helvetica', 'arial', sans-serif;
+}
+img{
+	vertical-align: bottom; /*Fix for white border under images*/
+}
+#container-main{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
