@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Was this helpful?</title>
+</head>
+
+<body>
+	
+	<h2>Var dette hjælpsomt?</h2>
+	<br>
+	<button id="yes-btn" onclick="ButtonYes()">Ja</button>
+	<button id="no-btn" onclick="ButtonNo()">Nej</button>
+	
+	<h3 id="output-title"></h3>
+
+<div id="form">
+<textarea id="contact" placeholder="Hvad kunne vi gøre bedere?" type="text" name="comment" rows="5"></textarea>
+		<br>
+		<button id="send" onClick="ButtonSend()">Send</button>
+</div>
+	
+<h3 id="send-clicked"></h3>
+	
+	<style>
+		#contact{
+			height: 200px;
+			width: 300px;
+		}
+		#yes-btn{
+			padding: 10px 20px 10px 20px;
+			color: white;
+			background-color: #004354;
+			border: none;
+   			cursor: pointer;
+			font-size: 14px;
+			font-weight: bold;
+		}
+		#no-btn{
+			padding: 10px 20px 10px 20px;
+			color: white;
+			background-color: #686868;
+			border: none;
+   			cursor: pointer;
+			font-size: 14px;
+			font-weight: bold;
+		}
+		#send{
+			padding: 10px 20px 10px 20px;
+			color: white;
+			background-color: #0046EB;
+			border: none;
+   			cursor: pointer;
+			font-size: 14px;
+			font-weight: bold;
+		}
+	</style>
+	
+	<script>
+		function ButtonYes(){
+			document.getElementById("output-title").innerHTML = "Vi er glade for at denne artikel var hjælpsom!";
+		}
+	
+	</script>
+	<script>
+		function ButtonNo(){
+			document.getElementById("output-title").innerHTML = "Vi er kede af at denne artikel ikke var hjælpsom!"
+		}
+	</script>
+	<script>
+		function ButtonSend(){
+			document.getElementById("send-clicked").innerHTML = "Vi er altid glade for jeres feedback!"
+		}
+	</script>
+
+</body>
+</html>
